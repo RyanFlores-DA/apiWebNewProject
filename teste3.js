@@ -8,7 +8,8 @@ const URLREC = process.env.URLREC;
 const URLOLI = process.env.URLOLI;
 server.use(express.json());
 server.listen(2000);
-
+//URLREC="https://api.openweathermap.org/data/2.5/weather?q=recife&appid=061f8b2693bdec8c084095b022fadb06&units=metric" adicionar no .env e depois remover
+//URLOLI="https://api.openweathermap.org/data/2.5/weather?q=olinda&appid=061f8b2693bdec8c084095b022fadb06&units=metric"
 
 server.get('/cidade/:cidade', async (req, res) => {
     const { cidade } = req.params;
